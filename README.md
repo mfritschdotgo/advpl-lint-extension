@@ -72,5 +72,5 @@ npm run compile
 npx @vscode/vsce package
 ```
 ### 4. Licença
-Este projeto está licenciado sob a MIT License.
+Este projeto está licenciado sob a APACHE 2.0 License.
 

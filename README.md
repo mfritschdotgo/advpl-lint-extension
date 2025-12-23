@@ -5,7 +5,6 @@ Esta extensão fornece análise estática para códigos **ADVPL**, **TLPP** e **
 Ela utiliza um motor de análise escrito em **Go** com base em **ANTLR**, clique [aqui](https://github.com/mfritschdotgo/advpl-lint) para acessar o código deste motor de análise. 
 
 ## Funcionalidades
-___
 Atualmente temos as funcionalidades abaixo, mas é uma ferramenta em construção e deve continuar a receber novas funcionalidades.
 
 - **Detecção de Objetos não liberados:** Identifica variáveis instanciadas (ex: `oObj := MsNew...`) que não foram limpas com `FreeObj()`.
@@ -17,7 +16,6 @@ Atualmente temos as funcionalidades abaixo, mas é uma ferramenta em construçã
   - Status na barra inferior indicando o progresso da análise.
 
 ## Como Usar
-___
 A análise é executada **sob demanda** para economizar recursos da sua máquina.
 
 1. Abra um arquivo fonte (`.prw`, `.tlpp` ou `.prg`) no VS Code.
@@ -28,19 +26,16 @@ A análise é executada **sob demanda** para economizar recursos da sua máquina
 Aguarde alguns segundos. Se houver problemas, eles serão destacados no código.
 
 ## Configurações da Extensão
-___
 Esta extensão funciona "out-of-the-box" (sem configuração), pois já traz os binários de análise embutidos. No entanto, você pode customizar se necessário:
 
 * `advplLint.binaryPath`: (Opcional) Caminho absoluto para um executável do linter customizado, caso você não queira usar a versão que vem com a extensão.
 
 ## Requisitos
-___
 * **VS Code** versão 1.80.0 ou superior.
 * Nenhum software adicional é necessário (o motor em Go já está incluso no pacote).
 
 
 ## Guia de Desenvolvimento (Para Contribuidores)
-___
 Se você deseja alterar o código fonte desta extensão ou recompilar o motor de análise, siga os passos abaixo.
 
 ### 1. Estrutura do Projeto
